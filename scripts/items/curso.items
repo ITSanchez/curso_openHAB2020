@@ -1,0 +1,13 @@
+/* Luz */
+Switch test "Luz Test"
+
+/* Version openHAB */
+String RB_Version "Raspbian Version: [%s]"
+String RB_Version "Raspbian Version: [%s]"
+
+/* Reiniciar Conector Cloud */
+Switch OH_RestartOHC   "Reiniciar openHAB Cloud"
+
+/* Clima Ezeiza */
+Number TemperaturaEZE "Temperatura [%.1f]"
+Number HumedadEZE "Humedad [%.1f]"

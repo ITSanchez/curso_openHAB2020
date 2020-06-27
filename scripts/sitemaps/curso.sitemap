@@ -1,0 +1,12 @@
+sitemap curso label="Curso openHAB 2020"
+{
+	Switch item=test label="Luz Prueba" icon="light"
+	
+	Text label="Buenos Aires" icon="sun_clouds"{
+		Text item=TemperaturaEZE label="Buenos Aires [%.1f   C]" icon="temperature"
+		Text item=TemperaturaEZE label="Buenos Aires [%.1f   C]" icon="temperature"
+	}
+	Text item=OH_Version icon="keyring"
+        Text item=RB_Version icon="keyring"
+	Switch item=OH_RestartOHC label="openHAB CloudConnector" icon="wallswitch" mappings=[ON="Reiniciar"]
+}
