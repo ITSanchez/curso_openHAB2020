@@ -3,7 +3,7 @@ Switch test "Luz Test"
 
 /* Version openHAB */
 String RB_Version "Raspbian Version: [%s]"
-String RB_Version "Raspbian Version: [%s]"
+String OH_Version "openHAB Version: [%s]"
 
 /* Reiniciar Conector Cloud */
 Switch OH_RestartOHC   "Reiniciar openHAB Cloud"

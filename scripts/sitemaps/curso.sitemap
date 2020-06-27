@@ -9,4 +9,8 @@ sitemap curso label="Curso openHAB 2020"
 	Text item=OH_Version icon="keyring"
         Text item=RB_Version icon="keyring"
 	Switch item=OH_RestartOHC label="openHAB CloudConnector" icon="wallswitch" mappings=[ON="Reiniciar"]
+
+	Text label="Prueba Video" icon="video" {
+		Video url="https://itsanchez.com.ar/mp4/CasaInteligente.m4v" encoding="hls" 
+	}
 }
