@@ -3,8 +3,8 @@ sitemap curso label="Curso openHAB 2020"
 	Switch item=test label="Luz Prueba" icon="light"
 	
 	Text label="Buenos Aires" icon="sun_clouds"{
-		Text item=TemperaturaEZE label="Buenos Aires [%.1f   C]" icon="temperature"
-		Text item=TemperaturaEZE label="Buenos Aires [%.1f   C]" icon="temperature"
+		Text item=TemperaturaEZE label="Buenos Aires - Temperatura [%.1f   C]" icon="temperature"
+		Text item=HumedadEZE label="Buenos Aires - Huemdad [%.1f%%]" icon="humidity"
 	}
 	Text item=OH_Version icon="keyring"
         Text item=RB_Version icon="keyring"

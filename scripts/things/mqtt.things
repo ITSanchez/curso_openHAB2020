@@ -1,0 +1,23 @@
+Bridge mqtt:broker:mosquitto "Mosquitto" [ host="localhost", port="1883", secure=false, clientID="openHAB24" ]
+
+Thing mqtt:topic:mosquitto:climaeze "Temperatura Ezeiza" (mqtt:broker:mosquitto) @ "MQTT"  {
+
+ Channels:
+        Type number : temp "Temperatura" [ 
+		stateTopic="clima_eze/temperature"
+	]
+	Type number: hum "Humedad" [
+		stateTopic="clima_eze/humidity"
+	]
+}
+
+Thing mqtt:topic:mosquitto:ohversion "Version openHAB" (mqtt:broker:mosquitto) @ "MQTT"  {
+
+ Channels:
+        Type string : ohversion "OH Version" [
+                stateTopic="openhab_server/OHVersion"
+        ]
+        Type string: rbversion "RB Version" [
+                stateTopic="openhab_server/RBVersion"
+        ]
+}

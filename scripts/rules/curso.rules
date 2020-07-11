@@ -1,0 +1,15 @@
+rule "Clima Ezeiza"
+when
+    Time cron "0 0/10 * * * ?"   // cada 10 minutos
+then
+     executeCommandLine("sudo /etc/openhab2/scripts/clima_eze.sh")
+     logInfo('Info','Actualizando Clima Ezeiza - MQTT')
+end
+
+rule "Version openHAB"
+when
+    Time cron "0 0/59 * * * ?"   // cada 59 minutos
+then
+     executeCommandLine("sudo /etc/openhab2/scripts/openhab_version_mqtt.sh")
+     logInfo('Info','Actualizando Version openHAB - MQTT')
+end

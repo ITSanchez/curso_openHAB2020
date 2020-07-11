@@ -2,12 +2,12 @@
 Switch test "Luz Test"
 
 /* Version openHAB */
-String RB_Version "Raspbian Version: [%s]"
-String OH_Version "openHAB Version: [%s]"
+String RB_Version "Raspbian Version: [%s]"	{ channel="mqtt:topic:mosquitto:ohversion:rbversion" }
+String OH_Version "openHAB Version: [%s]"	{ channel="mqtt:topic:mosquitto:ohversion:ohversion" }
 
 /* Reiniciar Conector Cloud */
 Switch OH_RestartOHC   "Reiniciar openHAB Cloud"
 
 /* Clima Ezeiza */
-Number TemperaturaEZE "Temperatura [%.1f]"
-Number HumedadEZE "Humedad [%.1f]"
+Number TemperaturaEZE "Temperatura [%.1f]" 	{ channel="mqtt:topic:mosquitto:climaeze:temp" }
+Number HumedadEZE "Humedad [%.1f]"		{ channel="mqtt:topic:mosquitto:climaeze:hum" }
