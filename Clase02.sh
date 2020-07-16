@@ -5,4 +5,5 @@ cp ./scripts/sitemaps/curso.sitemap /etc/openhab2/sitemaps
 cp ./scripts/scripts/clima_eze.sh /etc/openhab2/scripts
 cp ./scripts/rules/curso.rules /etc/openhab2/rules
 cp ./scripts/things/mqtt.things /etc/openhab2/things
+cp ./scripts/scripts/openhab_version_mqtt.sh /etc/openhab2/scripts
 echo 'Operacion finalizada'
