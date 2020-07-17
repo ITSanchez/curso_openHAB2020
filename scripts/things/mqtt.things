@@ -21,9 +21,20 @@ Thing mqtt:topic:mosquitto:ohversion "Version openHAB" (mqtt:broker:mosquitto) @
                 stateTopic="openhab_server/RBVersion"
         ]
 }
-
-Thing mqtt:topic:mosquitto:marquette "Luz MQTT" (mqtt:broker:mosquitto) @ "MQTT"  {
+Thing mqtt:topic:mosquitto:ohversion "Version openHAB" (mqtt:broker:mosquitto) @ "MQTT"  {
 
  Channels:
-        Type switch : luz  "Switch Luz" [stateTopic="topics/test" , commandTopic="topics/test"]
+        Type string : ohversion "OH Version" [
+                stateTopic="openhab_server/OHVersion"
+        ]
+        Type string: rbversion "RB Version" [
+                stateTopic="openhab_server/RBVersion"
+        ]
 }
+
+Thing mqtt:topic:mosquitto:marquette "Luz MQTT" (mqtt:broker:mosquitto) @"Luz"  {
+
+ Channels:
+        Type switch : luz  "Switch Luz" [ stateTopic="topics/test", commandTopic="topics/test/set" ]
+}
+

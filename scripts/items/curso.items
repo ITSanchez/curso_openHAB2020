@@ -1,5 +1,5 @@
 /* Luz */
-Switch test "Luz Test" 				{ channel="mqtt:topic:mosquitto:marquette:luz" }
+Switch test "Luz Test" 				{ channel="mqtt:topic:mosquitto:marquette:luz:state" }
 
 /* Version openHAB */
 String RB_Version "Raspbian Version: [%s]"	{ channel="mqtt:topic:mosquitto:ohversion:rbversion" }
